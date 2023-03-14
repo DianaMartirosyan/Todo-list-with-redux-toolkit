@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form input[type="text"] {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #132013;
+  width: 100%;
+  border: 1px solid #263E26;
+}
+
+.form button:hover {
+  background-color: #263E26;;
+}
+
+.form-top {
+  width: 100%;
+}
+
+.form-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-date {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #132013;
+  border: 1px solid #263E26;;
+}
+
+
+@media only screen and (max-width:315px) {
+  .add-new-task{
+      width: 30%;  
+      margin: 0 auto;
+}
+}

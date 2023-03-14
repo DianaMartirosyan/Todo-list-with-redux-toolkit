@@ -1,0 +1,94 @@
+.daily-todo-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./../../assets/BG to-do.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.75rem 0;
+}
+
+.daily-todo-list-container {
+  border: 1px solid gray;
+  width: 50%;
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  color:#263E26;
+}
+
+.daily-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.75rem;
+}
+
+.daily-container-header h1 {
+  font-size: 1.5rem;
+}
+
+.todo-footer {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.completed-number {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #263E26;
+  font-size: 1.1rem;
+}
+
+.clear-buttons {
+  padding: 0 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .daily-todo-list-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .todo-footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .daily-todo-page {
+    align-items: flex-start;
+  }
+  .clear-buttons button {
+    padding: 12px 2px;
+    font-size: 1rem;
+  }
+
+  .daily-container-header h1 {
+    font-size: 1rem;
+  }
+
+  .clear-buttons {
+    padding: 4px;
+  }
+}
+@media only screen and (max-width:315px) {
+  .clear-buttons {
+    flex-direction: column;
+  }
+}

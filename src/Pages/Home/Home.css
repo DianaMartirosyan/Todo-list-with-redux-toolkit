@@ -1,0 +1,150 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./../../assets/BG\ todo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.75rem;
+}
+
+.todo-input-container {
+  width: 50%;
+  border-radius: 0.75rem;
+  padding: 0 0.75rem;
+  background: white;
+  border: 1px solid #263E26;
+  background-color: #FFFFFF;
+}
+
+.todo-input-container h1 {
+  font-style: italic;
+  text-align: center;
+  color: #132013;
+  margin: 1.5rem auto;
+}
+
+.new-task-container {
+  border: 1px solid #263E26;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  padding-top: 0;
+  border-radius: 0.75rem;
+  background: #4A7A4A
+}
+
+.new-task-container h1 {
+  color: white;
+  margin: 1.25rem auto;
+}
+
+.dates-container {
+  padding: 0.75rem;
+  background: #4A7A4A;
+  margin: 1.25rem 0;
+  border-radius: 0.75rem;
+}
+
+.dates-container h2 {
+  color: white;
+  text-align: center;
+  margin: 1.25rem auto;
+  font-style: italic;
+}
+
+.single-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-date a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #263E26;
+  width: 80%;
+  text-decoration: none;
+}
+
+.single-date-text {
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 2px 0;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: 1px solid #263E26;
+  color:#132013;
+}
+
+.single-date button:hover {
+  background-color: #263E26;
+}
+.delete-icon {
+  display: none;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:700px) {
+  .delete-icon {
+    display: block !important;
+  }
+  .delete-text {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 600px) {
+  .todo-input-container {
+    width: 95%;
+  }
+
+  .new-task-container,
+  .dates-container {
+    padding: 4px;
+  }
+
+  .home-page {
+    align-items: flex-start;
+  }
+
+  .single-date-text {
+    font-size: 1rem;
+    padding: 3px 0px;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .single-date button {
+    font-size: 1rem;
+  }
+
+
+}
+
+
+@media only screen and (max-width:315px) {
+  .form-bottom{
+    flex-direction: column;
+  }
+  .delete-icon {
+    display: block !important;
+  }
+  .delete-text {
+    display: none;
+  }
+  .single-date-text {
+    font-size: 1rem;
+    padding: 3px 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
