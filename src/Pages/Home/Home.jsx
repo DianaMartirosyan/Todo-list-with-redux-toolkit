@@ -48,7 +48,7 @@ export default function Home() {
                   </Link>
                   <button onClick={() => deleteDateHandler(date)} >
                     <span className="delete-text"> Delete</span>
-                    <DeleteIcon  style={{display:'none'}} className="delete-icon"/>
+                    <DeleteIcon style={{ display: 'none' }} className="delete-icon" />
                   </button>
                 </div>
               ))}
